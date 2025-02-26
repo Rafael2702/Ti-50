@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+</head>
+<body>
+    <h1>Modificando conteúdo</h1>
+    
+    <p id="mensagem">Olá Mundo!</p>
+    
+    <button onclick='document.getElementById("mensagem").innerHTML = "Olá <br> JavaScript!"'>Mudar Mensagem</button>
+    <button onclick='document.getElementById("mensagem").innerHTML = "Olá <br> Olá Mundo!"'>Voltar Mensagem</button>
+    <h1>Modificando atributos</h1>
+    <button onclick="document.getElementById('lamp').src = 'on.gif';">liga</button>
+    <button onclick="document.getElementById('lamp').src = 'off.gif';">deligar</button>
+   
+    <img id="lamp"src= "off.gif" alt="Lampada">
+    <script>
+        
+    </script>
+    
+</body>
+</html>
