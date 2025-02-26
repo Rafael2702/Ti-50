@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplos de JavaScript</title>
 </head>
-<body>
+
+<body id="corpo">
+    
     <h1>Modificando conteúdo</h1>
     
     <p id="mensagem">Olá Mundo!</p>
@@ -26,8 +28,16 @@
     <P id="mensagem2">Olá Mundo</P>
     <button onclick="document.getElementById('mensagem2').style.fontSize ='32px';">Aumenta fonte</button>
     <button onclick="document.getElementById('mensagem2').style.fontSize ='16px';">Diminu fonte</button>
+
+    <hr>
+    <button onclick="temaEscuro()">Tema Escuro</button>
     
     <script>
+        
+        function temaEscuro(){
+            document.getElementById('corpo').style.backgroundColor='blue';
+            document.getElementById('corpo').style.color = 'white';
+        }
 
 
 
