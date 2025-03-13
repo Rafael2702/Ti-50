@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
         <fieldset>
             <legend>Dados de acesso</legend>
 
@@ -49,6 +49,7 @@
 <br>
             
               <select name="estado" id="estado">
+                <option value="">Escolha..</option>
                 <option value="sp">São Paulo</option>
                 <option value="rj">Rio de Janeiro</option>
                 <option value="mg">Minas Gerais</option>
@@ -84,12 +85,16 @@
                 <option value="pe">Pernambuco</option>
                 <option value="pb">Paraíba</option>
                 <option value="rn">Rio Grande do Norte</option>
-                
+
                 </select>
+                <br> 
+                 <label for="mensagem">Mensagem</label>
+                 <textarea name="mensagem" id="mensagem"></textarea>
         </fieldset>
-        <br>
+    
         <!--Botão de envio-->
-        <input type="submit">
+        <input type="reset" value="Limpar">
+        <input type="submit" value="cadastrar">
     </form>
        
     
