@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <fieldset>
+            <legend>Dados de acesso</legend>
+
+        <!--Rotulo para o campo ipunt-->
+        <label for="nome">*Nome</label>
+        <!--Campo de entrada para texto-->
+        <input type="text" name="nome" id="Nome" placeholder="Nome" required>
+        <!--Rotulo para o campo ipunt-->
+        <br>
+        <label for="senha">*Senha</label>
+        <!--Campo de entrada para senha-->
+        <input type="password" name="senha" id="senha" required>
+        </fieldset>
+        <fieldset>
+            <legend> Dados pessoas</legend>
+            
+            <label for="email">*Email</label>
+
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="data">*Data de nascimento</label>
+            <input type="date" name="data" id="data">
+            <br>
+           
+            <input type="radio" name="tipo" id="aluno" value="aluno"><label for="aluno">Aluno</label>
+            <input type="radio" name="tipo" id="professor" value="profe"><label for="professor" >Professor</label>
+           
+
+        
+            <br>
+
+            <input type="checkbox" name="politica" id="politica" value="sim">
+            <label for="politica">Aceita o termos da politica de privacidade</label>
+<br>
+            <input type="checkbox" name="informe" id="informe" value="sim">
+            <label for="informe">Desejo receber o informativo</label>
+
+<br>
+            
+              <select name="estado" id="estado">
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="es">Espírito Santo</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="pr">Paraná</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="go">Goiás</option>
+                <option value="df">Distrito Federal</option>
+                <option value="to">Tocantins</option>
+                <option value="pa">Pará</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>   
+                <option value="ro">Rondônia</option>
+                <option value="ac">Acre</option>
+                <option value="rr">Roraima</option>
+                <option value="ba">Bahia</option>
+                <option value="se">Sergipe</option>
+                <option value="al">Alagoas</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pb">Paraíba</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="ce">Ceará</option>
+                <option value="pi">Piauí</option>
+                <option value="ma">Maranhão</option>
+                <option value="pa">Pará</option>
+                <option value="rr">Roraima</option>
+                <option value="ba">Bahia</option>
+                <option value="se">Sergipe</option>
+                <option value="al">Alagoas</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pb">Paraíba</option>
+                <option value="rn">Rio Grande do Norte</option>
+                
+                </select>
+        </fieldset>
+        <br>
+        <!--Botão de envio-->
+        <input type="submit">
+    </form>
+       
+    
+</body>
+</html>
