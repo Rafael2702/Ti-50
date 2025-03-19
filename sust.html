@@ -7,19 +7,20 @@
 
    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </svg>
 <style>
 
     :root{
         --bs-primary-rgb: 85, 40, 180;
         --bs-secondary-rgb: 120, 120, 160;
         --bs-dark-rgb: 0, 20, 60;
-        --bs-navbar-color: rgb(), 255, 0;
+        --bs-light-rgb: 230, 230, 240;
+        --bs-success-rgb: 25, 135, 84;
         --bs-body-font-family: 'Roboto', sans-serif;
     }
-    header h1{
-        font-family: jest;
-    }
+  
+    
     .nav-link{
         color: greenyellow !important;
     }
@@ -31,6 +32,12 @@
         
 
      }
+
+     header h1 {
+    font-family: 'Roboto', sans-serif; /* Outras fontes podem ser usadas */
+    font-size: 2.5rem;
+}
+
 
  .card-img-top {
     width: 100%;
@@ -49,7 +56,7 @@
 }
 
     
-.
+
 
 
 
@@ -62,7 +69,7 @@
 
 <body>
    
-    <header class= "bg-success text-white py-4">
+    <header class= "bg-success text-dark py-4">
         <div class="container">
             <h1 class="text-center">Conexão Sustentável</h1>
             <p class="text-center lead">Conectando pessoas por um futuro mais verde</p>
@@ -75,13 +82,23 @@
 
     
  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  
   <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)">Inicio</a>
-    
-    
+  
+    <button type="button" class="btn btn-success">Inicio</button>
+    <form class="d-flex" role="search">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  </form>
+  
+  
     
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
+
+      
+      
         
         <li class="nav-item">
           <a class="nav-link" href="javascript:void(0)">Serviços</a>
@@ -93,14 +110,17 @@
           <a class="nav-link" href="javascript:void(0)">Sobre</a>
         </li>
       </ul>
+  
+      
       <form class="d-flex">
         <input class="form-control me-2" type="text" >
         <button class="btn btn-primary" type="button">Pesquisa</button>
       </form>
     </div>
   </div>
-</nav>
 
+
+</nav>
         
             
             
@@ -108,8 +128,45 @@
                 <div class="container text-center">
                     <h2>Bem-vindo à Conexão Sustentável</h2>
                     <p class="lead">Junte-se a nós e faça parte dessa transformação!</p>
-                    <a href="login.html" class="btn btn-success btn-lg">Cadastre sua iniciativa agora</a>
-                    </div>
+                
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Cadastre sua iniciativa agora
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" >Conexão Sustentáveis</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label class="w-25 text-end" for="nome">Nome</label>
+        <input type="text" name="nome" id="Nome"  required >
+        <br>
+        
+        <label class="w-25 text-end mt-3" for="email">E-mail</label>
+        <input type="text" name="email" id="email" required>
+        <br>
+        
+        <label class="w-25 text-end mt-3" for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" required>
+        <br>
+        <label class="w-25 text-end mt-3" for="senha"> Repita a Senha</label>
+        <input type="password" name="senha" id="senha" required>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Envia</button>
+        <button type="button" class="btn btn-success">cadastrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                    
+  </div>
 
             
             
@@ -156,15 +213,20 @@
                               </div>
                        </section>
 
-                       <footer class="bg-success text-white py-5 mt-5">
-                            <div class="container text-center">
+                       <footer class="bg-success text-center py-5 mt-5">
+                            
                                 <p>&COPY; 2023 Conexão Sustentável. Todos os direitos reservados.</p>
-                                <a href="#" class="text-white mx-2">Facebook</a>
-                                <a href="#" class="text-white mx-2">Instagram</a>
-                                <a href="#" class="text-white mx-2">GitHub</a>
+                                <i class="bi bi-facebook mx-2 "> </i>
+                                <i class="bi bi-instagram mx-2"></i>
+                                <i class="bi bi-whatsapp mx-2"></i>
+                                <i class="bi bi-github mx-2"></i>
+                          
                             </div>
                             </div>
+                            
                         </footer>
+
+                        
     
 </body>
 </html>
