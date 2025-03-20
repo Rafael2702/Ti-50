@@ -9,8 +9,9 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </svg>
+  <!-- ESTILO PARA O CABEÇALHOS-->
 <style>
-
+ /* Definição de variáveis globais de cores e fonte */
     :root{
         --bs-primary-rgb: 85, 40, 180;
         --bs-secondary-rgb: 120, 120, 160;
@@ -21,24 +22,26 @@
     }
   
     
+    /* Estilização dos links do menu */
     .nav-link{
         color: greenyellow !important;
     }
     .nav-link:hover{
         color: greenyellow !important;
     }
+    /* Estilização do menu de navegação */
      nav{
         background-color: greenyellow;
         
 
      }
-
+     /* Estilização do cabeçalho */
      header h1 {
     font-family: 'Roboto', sans-serif; /* Outras fontes podem ser usadas */
     font-size: 2.5rem;
 }
 
-
+ /* Ajuste para imagens dentro dos cards */
  .card-img-top {
     width: 100%;
     height: 200px; /* Ajuste a altura conforme necessário */
@@ -68,10 +71,10 @@
 </head>
 
 <body>
-   
+   <!--Cabeçalho da págino-->
     <header class= "bg-success text-dark py-4">
         <div class="container">
-            <h1 class="text-center">Conexão Sustentável</h1>
+            <h1 class="text-center">Conexão Sustentável</h1><!--Titulo centralizado-->
             <p class="text-center lead">Conectando pessoas por um futuro mais verde</p>
 
         
@@ -80,7 +83,7 @@
         
     </header>
 
-    
+ <!-- Barra de navegação -->
  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   
   <div class="container-fluid">
@@ -96,34 +99,47 @@
     
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
-
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Serviço</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Doaçãos</a></li>
+            <li><a class="dropdown-item" href="#">Vendas</a></li>
+            <li><a class="dropdown-item" href="#">Trocas</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Produtos</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Brinquedos Naturais</a></li>
+            <li><a class="dropdown-item" href="#">Acessório biodegradáveis</a></li>
+            <li><a class="dropdown-item" href="#">Kits ecológicos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Sobre nós</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Como foi fundada</a></li>
+            <li><a class="dropdown-item" href="#">Missão</a></li>
+            <li><a class="dropdown-item" href="#">Valores</a></li>
+          </ul>
+        </li>
       
       
         
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Serviços</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Produtos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Sobre</a>
-        </li>
-      </ul>
   
       
       <form class="d-flex">
-        <input class="form-control me-2" type="text" >
-        <button class="btn btn-primary" type="button">Pesquisa</button>
-      </form>
+        <input class="form-control me-2" type="search" aria-label="Pesquisa" >
+        <button class="btn btn-success" type="button">Pesquisa</button>
+      </div>
     </div>
-  </div>
-
+    
+  </form>
 
 </nav>
         
             
-            
+             <!-- Seção principal -->
             <section class="hero bg-light py-5">
                 <div class="container text-center">
                     <h2>Bem-vindo à Conexão Sustentável</h2>
@@ -164,32 +180,30 @@
     </div>
   </div>
 </div>
+ </div>
+</section>
 
-                    
-  </div>
 
-            
-            
-        
-        
-        </section>
-
+<!-- Seção de Iniciativas -->
         <section>
             <div class="container">
                 <h2 class="text-center mb-4">Iniciativas Sustentáveis</h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card" onclick="location.href='reciclagem.html';" style="cursor:pointer;">
-                            <img src="imagem/reduce-reuse-recycle.jpg" class="card-img-top" alt="Reciclagem">
-                            <div class="card-body">
-                                <h5 class="card-title">Reciclagem</h5>
-                                <p class="card-text">Projetos focados na reciclagem de materiais.</p>   
-                            </div>
-                        </div>
-                        </div>
+                        <div class="card" onclick="location.href='https://www.educacaoetransformacao.com.br/projeto-reciclagem/';" style="cursor:pointer;">
+                          <img src="imagem/reduce-reuse-recycle.jpg" class="card-img-top" alt="Reciclagem">
+                          
+                          <div class="card-body">
+                              <h5 class="card-title">Reciclagem</h5>
+                              <p class="card-text">Projetos focados na reciclagem de materiais.</p>   
+                          </div>
+                      </div>
+                      </div>
+                            
+                            
                         
                         <div class="col-md-4">
-                            <div class="card" onclick="location.href='energia.html';" style="cursor:pointer;">
+                            <div class="card" onclick="location.href='https://sustentabilidadeemfoco.com.br/energia-limpa-no-brasil-o-potencial-das-fontes-renovaveis-para-um-futuro-sustentavel/';" style="cursor:pointer;">
                                 <img src="imagem/R.jpg" class="card-img-top" alt="Energia Renovável">
                                 <div class="card-body">
                                     <h5 class="card-title">Energia Renovável</h5>
@@ -199,7 +213,7 @@
                         </div>
                 
                                 <div class="col-md-4">
-                                    <div class="card" onclick="location.href='reflorestamento.html';" style="cursor:pointer;">
+                                    <div class="card" onclick="location.href='https://planosimples.com/guia-completo-para-o-cultivo-de-arvores-nativas-no-reflorestamento/';" style="cursor:pointer;">
                                         
                                         <img src="imagem/stufe-a-legna-e-gas-nestor-martin-soluzioni-per-casa.jpg" class="card-img-top" alt="Reflorestamento">
                             
@@ -209,13 +223,14 @@
                                       </div>
                                     </div>
                                   </div>
+                                  <!-- Cartões adicionais podem ser adicionados aqui -->
                                 </div>
                               </div>
                        </section>
-
+                               <!-- Rodapé -->
                        <footer class="bg-success text-center py-5 mt-5">
                             
-                                <p>&COPY; 2023 Conexão Sustentável. Todos os direitos reservados.</p>
+                               <h4><p>&COPY;2025 Conexão Sustentável. Todos os direitos reservados.</p></h4>
                                 <i class="bi bi-facebook mx-2 "> </i>
                                 <i class="bi bi-instagram mx-2"></i>
                                 <i class="bi bi-whatsapp mx-2"></i>
